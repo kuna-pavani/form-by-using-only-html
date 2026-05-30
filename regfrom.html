@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Course Registration Form</title>
+  </head>
+  <body>
+    <h1>Course Registration Form</h1>
+
+    <form>
+      <fieldset>
+        <legend>Personal Details</legend>
+
+        <table cellpadding="8">
+          <tr>
+            <td>
+              <label for="fname">First Name</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Ex: Harshit"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="sname">Surname</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="sname"
+                name="surname"
+                placeholder="Ex: T"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="mobile">Mobile Number</label>
+            </td>
+            <td>
+              <input
+                type="tel"
+                id="mobile"
+                name="mobile"
+                placeholder="Ex: 987-897-0987"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="email">Email</label>
+            </td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ex: rohit@gmail.com"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="password">Password</label>
+            </td>
+            <td>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="min 5 characters"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="confirmPassword">Confirm Password</label>
+            </td>
+            <td>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                placeholder="min 5 characters"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="dob">DOB</label>
+            </td>
+            <td>
+              <input type="date" id="dob" name="dob" required />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Gender</td>
+            <td>
+              <input type="radio" id="male" name="gender" required />
+              <label for="male">Male</label>
+
+              <input type="radio" id="female" name="gender" />
+              <label for="female">Female</label>
+
+              <input type="radio" id="Other" name="gender" />
+              <label for="Other">Other</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="country">Select Country</label>
+            </td>
+            <td>
+              <select id="country" name="country" required>
+                <option value="">-- Select --</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="picture"> Upload Picture </label>
+            </td>
+            <td>
+              <input type="file" id="picture" name="picture" required />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Course Details</legend>
+
+        <table cellpadding="8">
+          <tr>
+            <td>
+              <label for="course"> Select Course </label>
+            </td>
+            <td>
+              <select id="course" name="course" required>
+                <option value="">-- Select Course --</option>
+                <option>Java Full Stack</option>
+                <option>Python Full Stack</option>
+                <option>Data Science</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Delivery Mode</td>
+            <td>
+              <input type="checkbox" id="online" name="Delivery Mode" />
+
+              <label for="online"> ONLINE </label>
+
+              <input type="checkbox" id="offline" name="Delivery Mode" />
+
+              <label for="offline"> OFFLINE </label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="comments"> Comments </label>
+            </td>
+            <td>
+              <textarea
+                id="comments"
+                name="comments"
+                rows="4"
+                cols="30"
+                placeholder="Enter any additional comments..."
+                required
+              ></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="documents"> Documents </label>
+            </td>
+            <td>
+              <input
+                type="file"
+                id="documents"
+                name="documents"
+                multiple
+                required
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <br />
+      <fieldset>
+        <legend>important attributes demo</legend>
+        <table cellpadding="8">
+          <tr>
+            <td>
+              <label for="readonly">readonly</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="readonly"
+                id="readonly"
+                value="Connot edit this"
+                readonly
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="dis">disabled</label>
+            </td>
+            <td>
+              <input
+                type="d"
+                name="dis"
+                id="dis"
+                value="disabled field"
+                disabled
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="focus">autofocus</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="focus"
+                id="focus"
+                placeholder="Gets focus on page load"
+                autofocus
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pattern">patters(letters only)</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="pattern"
+                id="pattern"
+                placeholder="Only A-Z"
+                pattern="[A-Za-z]"
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Output Elements</legend>
+        <table cellpadding="8">
+          <tr>
+            <td>Output</td>
+            <td>Result appers here</td>
+          </tr>
+          <tr>
+            <td>progress(70%)</td>
+            <td>
+              <progress value="70" max="100"></progress>
+            </td>
+          </tr>
+          <tr>
+            <td>meter(60%)</td>
+            <td>
+              <meter value="60" max="100" min="0"></meter>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Button Types</legend>
+        <table cellpadding="8">
+          <tr>
+            <td>input type="submit"</td>
+            <td>
+              <input type="submit" value="Submit Form" />
+            </td>
+          </tr>
+          <tr>
+            <td>input type="reset"</td>
+            <td>
+              <input type="reset" value="Rest Form" />
+            </td>
+          </tr>
+          <tr>
+            <td>input type="Button"</td>
+            <td>
+              <input type="button" value="Click me!" />
+            </td>
+          </tr>
+          <tr>
+            <td>input type="Image"</td>
+            <td>
+              <input
+                type="image"
+                src="https://www.magnific.com/free-photos-vectors/star"
+                alt="Image not found"
+                height="30"
+                width="40"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>button Elements</td>
+            <td>
+              <button>Button Elements</button>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
